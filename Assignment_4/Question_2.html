@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Div Dynamically</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        #container {
+            border: 2px dashed #333;
+            padding: 20px;
+            margin-top: 20px;
+            min-height: 100px;
+            background-color: #f9f9f9;
+        }
+
+        #container div {
+            background-color: #4CAF50; 
+            color: white;
+            border: 1px solid #388E3C;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .controls {
+            margin-bottom: 15px;
+        }
+
+        input {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <label>Width: <input type="number" id="wInput" value="100" placeholder="Width"></label>
+        <label>Height: <input type="number" id="hInput" value="50" placeholder="Height"></label>
+        <label>Text: <input type="text" id="tInput" value="Hello World" placeholder="Text"></label>
+        <button onclick="triggerCreation()">Create Div</button>
+    </div>
+
+    <h3>Container:</h3>
+    <div id="container">
+        </div>
+
+    <script>
+        function createDiv(width, height, text) {
+            const container = document.getElementById('container');
+            const newDiv = document.createElement('div');
+            newDiv.style.width = width + 'px';
+            newDiv.style.height = height + 'px';
+            newDiv.textContent = text;
+            container.appendChild(newDiv);
+            
+            console.log(`Div created with specified dimensions and text.`);
+        }
+
+        function triggerCreation() {
+            const w = document.getElementById('wInput').value;
+            const h = document.getElementById('hInput').value;
+            const t = document.getElementById('tInput').value;
+            
+            createDiv(w, h, t);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HashedBit Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+
+    <header>
+        <div class="logo">HashedBit</div>
+        <div class="social-links">
+            <a href="mailto:info@hashedbit.com">Email</a>
+            <a href="https://www.hashedbit.com">Website</a>
+            <a href="https://www.linkedin.com/company/hashedbit-innovations/">LinkedIn</a>
+        </div>
+    </header>
+
+    <nav>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('about')">About</a>
+        <a onclick="showSection('services')">Services</a>
+        <a onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <div class="container_main">
+        <aside>
+            <h3>Latest Updates</h3>
+            <p>Welcome to our new website layout. Check out the services section for more details.</p>
+            <br>
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Dashboard</li>
+                <li>Support</li>
+                <li>FAQ</li>
+            </ul>
+        </aside>
+
+        <div class="content-wrapper">
+            <main>
+                <div id="home" class="content-section" style="display: block;">
+                    <h2>Welcome to HashedBit</h2>
+                    <p>We are dedicated to shaping the future of technology through education and innovation.</p>
+                    <p>Explore our services or contact us to learn more about our internship programs.</p>
+                </div>
+
+                <div id="about" class="content-section">
+                    <h2>About HashedBit</h2>
+                    <p>HashedBit Innovations is a leading ed-tech company focused on upskilling students and professionals in the latest technologies.</p>
+                    <p>Our mission is to bridge the gap between academia and industry by providing high-quality training, mentorship, and real-world project experience.</p>
+                    <p>We believe in "Learning by Doing" and offer extensive internship programs to help aspiring developers kickstart their careers.</p>
+                </div>
+                <div id="services" class="services-container" style="display: none;">
+                    <div class="card">
+                    
+                     <img src="Gemini_Generated_Image_61ta3n61ta3n61ta.png" alt="Service 1">
+                    <h3>Web Design</h3>
+                    <p>We create beautiful and responsive designs that look great on all devices.</p>
+                </div>
+
+                <div class="card">
+                   <img src="Gemini_Generated_Image_uh4f3kuh4f3kuh4f (1).png" alt="Service 3">
+                     <h3>Development</h3>
+                    <p>Robust coding practices to ensure your website runs smoothly and fast.</p>
+                </div>
+
+                <div class="card">
+                    
+                    <img src="Gemini_Generated_Image_uh4f3kuh4f3kuh4f.png" alt="Service 3">
+                <h3>Marketing</h3>
+                    <p>Strategies to grow your audience and reach more customers online.</p>
+                    </div>
+                </div>
+
+              
+                <div id="contact" class="content-section">
+                    <h2>Contact Us</h2>
+                    <p><strong>Company Name:</strong> HashedBit Innovations</p>
+                    <p><strong>Address:</strong> Pune, Maharashtra, India</p>
+                    <p><strong>Email:</strong> info@hashedbit.com</p>
+                    <p><strong>Phone:</strong> +91 12345 67890</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 HashedBit Intern Assignment. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('services').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+
+    
+            var selectedSection = document.getElementById(sectionId);
+            
+            if (sectionId === 'services') {
+                selectedSection.style.display = 'flex'; 
+            } else {
+                selectedSection.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
