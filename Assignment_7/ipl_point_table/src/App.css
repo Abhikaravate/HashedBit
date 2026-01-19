@@ -1,0 +1,58 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin: 0 auto;
+  max-width: 900px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+thead {
+  background-color: #004ba0; 
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+}
+
+th {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tr:hover {
+  background-color: #e6f7ff;
+  transition: background-color 0.2s ease;
+}
+
+td {
+  font-size: 14px;
+  color: #333;
+}
